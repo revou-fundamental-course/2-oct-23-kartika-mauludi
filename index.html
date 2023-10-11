@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Suhu</title>
+    <title>Calculator Suhu tester</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <div class="container">
     <h2>Calculator Suhu</h2>
-    <div class="flex"><input id="celcius" maxlength="12" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '');" ></div>
+    <label for="">Celcius</label>
+    <div class="flex"><input id="celcius" maxlength="12" type="text" placeholder="masukkan nilai celcius..." required oninput="this.value = this.value.replace(/[^0-9.]/g, '');" ></div>
     <div class="flex"><button class="" name="konversi" id="konversi"  > konversi </button> </div>
     <div class="flex"><button class="" name="reset" id="reset"  > reset </button> </div>
     <div class="flex"><button class="" name="reverse" id="reverse"  > reverse </button> </div>
-    <div class="flex"><input id="farenheit" maxlength="12"  type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '');"></div>
+    <label for="">Fahrenheit</label>
+    <div class="flex"><input id="farenheit" placeholder="masukkan nilai Fahrenheit..." required maxlength="12"  type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '');"></div>
     <div class="flex"><input id="kalkulasi" type="text" disabled></div>
    
    </div>
