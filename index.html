@@ -10,20 +10,16 @@
 <body>
    <div class="container">
     <h2>Calculator Suhu</h2>
-    <div class="flex"><input id="celcius" maxlength="12" type="number"></div>
-    <div class="flex"><input id="farenheit" maxlength="12"  type="number"></div>
-    <div class="flex"><input id="kalkulasi" type="text"></div>
-    <div class="flex"><button class="" id="hitung" onclick="" > Hitung </button> </div>
+    <div class="flex"><input id="celcius" maxlength="12" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '');" ></div>
+    <div class="flex"><button class="" name="konversi" id="konversi"  > konversi </button> </div>
+    <div class="flex"><button class="" name="reset" id="reset"  > reset </button> </div>
+    <div class="flex"><button class="" name="reverse" id="reverse"  > reverse </button> </div>
+    <div class="flex"><input id="farenheit" maxlength="12"  type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '');"></div>
+    <div class="flex"><input id="kalkulasi" type="text" disabled></div>
+   
    </div>
 </body>
 <footer>
     <script src="js/javascript.js" ></script>
-    <script>
-        let celcius;
-        let farenheit;
-        
-        celcius = getElementByid(celcius);
-        console.log(celcius);
-    </script>
 </footer>
 </html>
